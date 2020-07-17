@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title> LAYOUT05 </title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #wrap {
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        text-transform: bisque;
+    }
+
+    #header-wrap {
+        width: 100%;
+        background-color: bisque;
+        height: 100px;
+    }
+
+    #banner-wrap {
+        width: 100%;
+        height: 100px;
+        background-color: bisque;
+    }
+
+    #content-wrap {
+        width: 100%;
+        height: 500px;
+        background-color: bisque;
+    }
+
+    #footer-wrap {
+        width: 100%;
+        height: 100px;
+        background-color: bisque;
+    }
+
+    .header-container {
+        margin: 0 auto;
+        width: 100%;
+        height: 100px;
+        background-color: bisque;
+    }
+
+    .banner-container {
+        margin: 0 auto;
+        width: 80%;
+        height: 100px;
+        background-color: #fff;
+    }
+
+    .content-container {
+        margin: 0 auto;
+        width: 80%;
+        height: 500px;
+        background-color: #fff;
+    }
+
+    .footer-container {
+        margin: 0 auto;
+        width: 100%;
+        height: 100px;
+        background-color: bisque;
+
+
+    }
+
+
+
+
+    div.scrollmenu {
+        background-color: #fff;
+        font-size: 20px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    div.scrollmenu a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+
+    div.scrollmenu a:hover {
+        background-color: #fff;
+    }
+
+
+    div.scrollmenu {
+        background-color: #fff;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    div.scrollmenu a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+
+    div.scrollmenu a:hover {
+        background-color: #fff;
+    }
+
+</style>
+
+<body>
+    <div id="wrap">
+        <div id="header-wrap">
+            <div class="header-container"></div>
+        </div>
+
+
+
+
+
+        <div id="banner-wrap">
+            <div class="banner-container">
+
+                <div class="scrollmenu">
+                    <a href="#home">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    ...
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="content-wrap">
+            <div class="content-container">
+                <div style="width:inherit;height:inherit;overflow-y:hidden;overflow-x:scroll;position: absolute;left: auto;right: auto">
+                    <p style="width:250%;">
+
+
+
+                        content
+
+
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer-wrap">
+            <div class="footer-container"></div>
+        </div>
+    </div>
+</body>
+
+</html>
